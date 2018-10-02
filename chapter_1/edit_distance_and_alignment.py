@@ -5,11 +5,15 @@ prints sequence of insertion/deletion/substitution operations required to conver
 
 __author__ = 'nishant'
 
-def edit_distance(source, target):
+def edit_distance(source, target, words = False):
     matrix = []
 
-    source = '\0'+source
-    target = '\0' + target
+    if words:
+        source = ['\0']+source
+        target = ['\0'] + target
+    else:
+        source = '\0' + source
+        target = '\0' + target
 
     for i in range(len(target)):
         if i == 0:
