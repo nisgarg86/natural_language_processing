@@ -1,6 +1,5 @@
 '''
 this python code cleans and tokenizes input text.
-P(w/h)
 '''
 
 __author__ = 'nishant'
